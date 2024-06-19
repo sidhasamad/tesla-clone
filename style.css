@@ -1,0 +1,126 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  
+}
+.navbar-brand svg {
+  width: 100px; /* Adjust size as needed */
+  height: auto;
+}
+
+
+.navbar-nav nav-item{
+  padding-left: 1182px;
+}
+
+/* styles.css */
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100vw; /* Full width of the viewport */
+  height: auto;
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center; /* Center align text */
+}
+
+.card-title {
+  font-size: 2rem; /* Example larger font size for title */
+}
+
+.card-text {
+  max-width: 80%; /* Example: restrict text width */
+}
+
+.btn {
+  margin-top: 10px; /* Adjust button spacing */
+}
+.underline-hover {
+  position: relative;
+  text-decoration: none;
+  color: inherit; /* Ensures text color remains unchanged */
+}
+
+.underline-hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value to control the distance of the underline from text */
+  width: 100%;
+  height: 2px;
+  background-color: #007bff; /* Change to desired underline color */
+  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
+}
+
+.underline-hover:hover::after {
+  transform: scaleX(1);
+}
+.footer {
+  padding: 20px 0; /* Adjust padding as needed */
+  width: 100%; /* Ensures the footer spans the full width */
+  padding-bottom: 20px;
+  padding-top: 70px;
+
+}
+.underline-fixed {
+  position: relative;
+  text-decoration: none;
+  color: inherit; /* Ensures text color remains unchanged */
+  font-size: 13px;
+  /* padding-left: 50px; */
+}
+
+.underline-fixed::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust this value to control the distance of the underline from text */
+  width: 168px;
+  height: 1px; /* Adjust the thickness of the underline */
+  background-color: #ffffff; /* Fixed white underline color */
+  
+}
+.text{
+  font-size: 13px;
+  /* padding-left: 50px; */
+}
+.word{
+  padding-top: 104px;
+  font-size: 13px;
+  
+}
+@media all and (max-width: 640px){
+  body{
+    width: 114vw;
+  }
+}
+@media all and (max-width: 480px){
+  body{
+    width: 200vw;
+  }
+}
+@media all and (max-width: 360px){
+  body{
+    width: 200vw;
+    overflow: hidden;
+  }
+}
+
+  
